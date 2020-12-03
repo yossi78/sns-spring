@@ -71,7 +71,11 @@
                         </goals>
                     </execution>
                 </executions>
-
+                <configuration>
+                    <executable>true</executable>
+                    <finalName>${project.artifactId}</finalName>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
             </plugin>
         </plugins>
     </build>
